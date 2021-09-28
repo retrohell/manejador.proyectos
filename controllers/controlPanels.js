@@ -4,15 +4,7 @@ function create(req, res, next) {
     res.send(`POST = ${req.params}`);
 }
 
-function getAll(req, res, next) {
-    res.send(`GET = ${req.params}`);
-}
-
-function getByID(req, res, next) {
-    res.send(`GET = ${req.params}`);
-}
-
-function getByRole(req, res, next) {
+function get(req, res, next) {
     res.send(`GET = ${req.params}`);
 }
 
@@ -28,13 +20,15 @@ function destroy(req, res, next) {
     res.send(`DELETE = ${req.params}`);
 }
 
+function close(req, res, next) {
+    res.send(`PUT = ${req.params}`);
+}
+
 module.exports = {
-    getAll,
     create,
     replace,
     edit,
     destroy,
-    getByID,
-    getByRole
+    get,
+    close
 }
-
