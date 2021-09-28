@@ -3,7 +3,7 @@ const router = express.Router();
 
 const controller = require('../controllers/userStories');
 
-/* GET team members listing. */
+/* GET user stories listing. */
 router.get('/', function(req, res, next) {
     res.send('respond with a resource');
 });

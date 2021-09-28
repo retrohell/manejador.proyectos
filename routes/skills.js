@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const controller = require('../controllers/columns');
+const controller = require('../controllers/skills');
 
-/* GET columns listing. */
+/* GET skills listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
