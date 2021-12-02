@@ -1,0 +1,9 @@
+{
+	"ok": "Acción realizada éxitosamente",
+	"bad": "Hubo un error al realizar la acción",
+	"records.list.ok": "Se obtuvieron los récords éxitosamente",
+	"records.list.bad": "No se pudieron obtener los récords",
+	"records.created.ok": "Se creó récord éxitosamente",
+	"records.created.bad": "Hubo un error al crear récord, no se pudo crear"
+
+}

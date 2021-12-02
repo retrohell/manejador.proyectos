@@ -1,0 +1,9 @@
+{
+	"ok": "Action succesful",
+	"bad": "There was an error",
+	"records.list.ok": "Got records sussesfully",
+	"records.list.bad": "There was an error, couldn't get records",
+	"records.created.ok": "Record created succesfully",
+	"records.created.bad": "There was an error while creating record"
+
+}
