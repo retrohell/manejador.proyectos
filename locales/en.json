@@ -15,17 +15,18 @@
 	"records.destroyed.ok": "Record deleted successfully",
 	"records.destroyed.bad": "There was an error while deleting, couldn't delete record",
 
-    "backlogs.list.ok": "Got backlogs successfully",
-    "backlogs.list.bad": "There was an error, couldn't get backlogs",
-    "backlogs.created.ok": "Backlog created successfully",
-    "backlogs.created.bad": "There was an error while creating backlog",
-    "backlogs.index.ok": "Got backlog successfully",
-    "backlogs.index.bad": "There was an error while getting backlog",
-    "backlogs.replaced.ok": "Backlog replaced successfully",
-    "backlogs.replaced.bad": "There was an error while replacing, couldn't replace backlog",
-    "backlogs.edited.ok": "Backlog edited successfully",
-    "backlogs.edited.bad": "There was an error while updating, backlog couldn't be edited",
-    "backlogs.destroyed.ok": "Backlog deleted successfully",
-    "backlogs.destroyed.bad": "There was an error while deleting, couldn't delete backlog"
+    "stories.list.ok": "Got stories successfully",
+    "stories.list.bad": "There was an error, couldn't get stories",
+    "stories.created.ok": "Story created successfully",
+    "stories.created.bad": "There was an error while creating story",
+	"stories.created.fibonacci.bad": "Value must be part of fibonacci series",
+    "stories.index.ok": "Got story successfully",
+    "stories.index.bad": "There was an error while getting story",
+    "stories.replaced.ok": "Story replaced successfully",
+    "stories.replaced.bad": "There was an error while replacing, couldn't replace story",
+    "stories.edited.ok": "Story edited successfully",
+    "stories.edited.bad": "There was an error while updating, story couldn't be edited",
+    "stories.destroyed.ok": "Story deleted successfully",
+    "stories.destroyed.bad": "There was an error while deleting, couldn't delete story"
 
 }

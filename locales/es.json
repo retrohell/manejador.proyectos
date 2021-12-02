@@ -1,7 +1,6 @@
 {
 	"ok": "Acción realizada éxitosamente",
 	"bad": "Hubo un error al realizar la acción",
-	
 	"records.list.ok": "Se obtuvieron los récords éxitosamente",
 	"records.list.bad": "No se pudieron obtener los récords",
 	"records.created.ok": "Se creó récord éxitosamente",
@@ -14,19 +13,30 @@
 	"records.edited.bad": "Hubo un error al editar el récord",
 	"records.destroyed.ok": "Récord eliminado éxitosamente",
 	"records.destroyed.bad": "Hubo un error al eliminar el récord",
-
 	"backlogs.list.ok": "Se obtuvieron los backlogs exitosamente",
-    "backlogs.list.bad": "No se pudieron obtener los backlogs",
-    "backlogs.created.ok": "Se creó backlog exitosamente",
-    "backlogs.created.bad": "Hubo un error al crear backlog, no se pudo crear",
-    "backlogs.index.ok": "Se obtuvo el backlog exitosamente",
-    "backlogs.index.bad": "Hubo un error al intentar obtener el backlog",
-    "backlogs.replaced.ok": "Se reemplazó el backlog éexitosamente",
-    "backlogs.replaced.bad": "Hubo un error al reemplazar el backlog",
-    "backlogs.edited.ok": "Backlog editado éexitosamente",
-    "backlogs.edited.bad": "Hubo un error al editar el backlog",
-    "backlogs.destroyed.ok": "Backlog eliminado éexitosamente",
-    "backlogs.destroyed.bad": "Hubo un error al eliminar el backlog"
-
-
+	"backlogs.list.bad": "No se pudieron obtener los backlogs",
+	"backlogs.created.ok": "Se creó backlog exitosamente",
+	"backlogs.created.bad": "Hubo un error al crear backlog, no se pudo crear",
+	"backlogs.index.ok": "Se obtuvo el backlog exitosamente",
+	"backlogs.index.bad": "Hubo un error al intentar obtener el backlog",
+	"backlogs.replaced.ok": "Se reemplazó el backlog éexitosamente",
+	"backlogs.replaced.bad": "Hubo un error al reemplazar el backlog",
+	"backlogs.edited.ok": "Backlog editado exitosamente",
+	"backlogs.edited.bad": "Hubo un error al editar el backlog",
+	"backlogs.destroyed.ok": "Backlog eliminado éexitosamente",
+	"backlogs.destroyed.bad": "Hubo un error al eliminar el backlog",
+	"stories.list.ok": "Se obtuvieron las historias de usuario exitosamente",
+	"stories.list.bad": "No se pudieron obtener las historias de usuario",
+	"stories.created.ok": "Se creó historia de usuario exitosamente",
+	"stories.created.bad": "Hubo un error al crear historia de usuario, no se pudo crear",
+	"stories.created.fibonacci.bad": "Hubo un error al crear historia de usuario, valor tiene que ser parte de la serie de fibonacci",
+	"stories.index.ok": "Se obtuvo el historia de usuario exitosamente",
+	"stories.index.bad": "Hubo un error al intentar obtener la historia de usuario",
+	"stories.replaced.ok": "Se reemplazó el historia de usuario éexitosamente",
+	"stories.replaced.bad": "Hubo un error al reemplazar la historia de usuario",
+	"stories.edited.ok": "Historia de usuario editado exitosamente",
+	"stories.edited.bad": "Hubo un error al editar la historia de usuario",
+	"stories.destroyed.ok": "Historia de usuario eliminado exitosamente",
+	"stories.destroyed.bad": "Hubo un error al eliminar la historia de usuario",
+	"stories.created.bad: no fibonacci": "stories.created.bad: no fibonacci"
 }

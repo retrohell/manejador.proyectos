@@ -4,7 +4,7 @@ log4js.configure({
     appenders: { backlogs: { type: "file", filename: "logs/general.log" } },
     categories: { default: { appenders: ["backlogs"], level: "info" } }
 });
-const logger = log4js.getLogger("records");
+const logger = log4js.getLogger("backlogs");
 
 function list(req, res, next) {
     Backlog.find().then(obj => {
@@ -89,18 +89,19 @@ function replace(req, res, next) {
 }
 
 function edit(req, res, next) {
-    const id = req.params.id;
+    console.log(req)
+    const id = req.query.id;
     const name = req.body.name;
     const recordId = req.body.requestDate;
-
+    
     let backlog = new Object();
 
     if (name) {
-        record._name = name;
+        backlog._name = name;
     }
 
     if (recordId) {
-        record._recordId = recordId;
+        backlog._recordId = recordId;
     }
 
     Backlog.findOneAndUpdate({ "_id": id }, backlog)

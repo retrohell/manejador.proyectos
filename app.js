@@ -16,6 +16,7 @@ const jwtKey = config.get("secret.key");
 
 var recordsRouter = require('./routes/records');
 var backlogsRouter = require('./routes/backlogs');
+var storiesRouter = require('./routes/stories');
 
 const uri = config.get("dbChain");
 mongoose.connect(uri);
@@ -60,6 +61,7 @@ app.use(expressJwt({secret:jwtKey, algorithms:['HS256']}).unless({
 
 app.use('/records', recordsRouter);
 app.use('/backlogs', backlogsRouter);
+app.use('/stories', storiesRouter);
 
 
 // catch 404 and forward to error handler
