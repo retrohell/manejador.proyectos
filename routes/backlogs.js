@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/records');
+const controller = require('../controllers/backlogs');
 
-/* GET project records listing. */
+/* GET backlogs listing. */
 router.get('/', controller.list);
 router.get('/:id', controller.index);
 router.post('/', controller.create);

@@ -1,9 +1,32 @@
 {
 	"ok": "Acción realizada éxitosamente",
 	"bad": "Hubo un error al realizar la acción",
+	
 	"records.list.ok": "Se obtuvieron los récords éxitosamente",
 	"records.list.bad": "No se pudieron obtener los récords",
 	"records.created.ok": "Se creó récord éxitosamente",
-	"records.created.bad": "Hubo un error al crear récord, no se pudo crear"
+	"records.created.bad": "Hubo un error al crear récord, no se pudo crear",
+	"records.index.ok": "Se obtuvo el récord éxitosamente",
+	"records.index.bad": "Hubo un error al intentar obtener el récord",
+	"records.replaced.ok": "Se reemplazó el récord éxitosamente",
+	"records.replaced.bad": "Hubo un error al reemplazar el récord",
+	"records.edited.ok": "Récord editado éxitosamente",
+	"records.edited.bad": "Hubo un error al editar el récord",
+	"records.destroyed.ok": "Récord eliminado éxitosamente",
+	"records.destroyed.bad": "Hubo un error al eliminar el récord",
+
+	"backlogs.list.ok": "Se obtuvieron los backlogs exitosamente",
+    "backlogs.list.bad": "No se pudieron obtener los backlogs",
+    "backlogs.created.ok": "Se creó backlog exitosamente",
+    "backlogs.created.bad": "Hubo un error al crear backlog, no se pudo crear",
+    "backlogs.index.ok": "Se obtuvo el backlog exitosamente",
+    "backlogs.index.bad": "Hubo un error al intentar obtener el backlog",
+    "backlogs.replaced.ok": "Se reemplazó el backlog éexitosamente",
+    "backlogs.replaced.bad": "Hubo un error al reemplazar el backlog",
+    "backlogs.edited.ok": "Backlog editado éexitosamente",
+    "backlogs.edited.bad": "Hubo un error al editar el backlog",
+    "backlogs.destroyed.ok": "Backlog eliminado éexitosamente",
+    "backlogs.destroyed.bad": "Hubo un error al eliminar el backlog"
+
 
 }
