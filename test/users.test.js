@@ -105,7 +105,7 @@ describe('Test Sistema de Usuarios', ()=>{
       if(err){
         done(err);
       } else {
-        expect(res.statusCode).toEqual(500);
+        expect(res.statusCode).toEqual(401);
         done();
       }
     });
@@ -146,7 +146,7 @@ describe('Test Sistema de Usuarios', ()=>{
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
   it('Debería editar un usuario', (done)=>{
-    supertest(app).put('/users/61a9b31132a70dac7c4ba64a')
+    supertest(app).patch('/users/61a9b31132a70dac7c4ba64a')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -161,7 +161,7 @@ describe('Test Sistema de Usuarios', ()=>{
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
   it('Debería NO editar un usuario', (done)=>{
-    supertest(app).put('/users/show/61a9b31132a70dac7c4ba64a')
+    supertest(app).patch('/users/show/61a9b31132a70dac7c4ba64a')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){
@@ -177,7 +177,7 @@ describe('Test Sistema de Usuarios', ()=>{
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
   it('Debería eliminar un usuario', (done)=>{
-    supertest(app).put('/users/61a9b31132a70dac7c4ba64a')
+    supertest(app).delete('/users/61a9b31132a70dac7c4ba64a')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -192,7 +192,7 @@ describe('Test Sistema de Usuarios', ()=>{
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
   it('Debería NO eliminar un usuario', (done)=>{
-    supertest(app).put('/users/show/61a9b31132a70dac7c4ba64a')
+    supertest(app).delete('/users/show/61a9b31132a70dac7c4ba64a')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){

@@ -136,7 +136,7 @@ describe('Test Sistema de records', ()=>{
       if(err){
         done(err);
       } else {
-        expect(res.statusCode).toEqual(404);
+        expect(res.statusCode).toEqual(401);
         done();
       }
     });
@@ -146,7 +146,7 @@ describe('Test Sistema de records', ()=>{
 describe('Test Sistema de records', ()=>{
   // Test Case = > 50 %
   it('Debería editar una records de usuario', (done)=>{
-    supertest(app).put('/records/61a851bf53f24c830eef81a6')
+    supertest(app).patch('/records/61a851bf53f24c830eef81a6')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -161,7 +161,7 @@ describe('Test Sistema de records', ()=>{
 describe('Test Sistema de records', ()=>{
   // Test Case = > 50 %
   it('Debería NO editar una records de usuario', (done)=>{
-    supertest(app).put('/records/show/61a851bf53f24c830eef81a6')
+    supertest(app).patch('/records/show/61a851bf53f24c830eef81a6')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){
@@ -177,7 +177,7 @@ describe('Test Sistema de records', ()=>{
 describe('Test Sistema de records', ()=>{
   // Test Case = > 50 %
   it('Debería eliminar una records de usuario', (done)=>{
-    supertest(app).put('/records/61a851bf53f24c830eef81a6')
+    supertest(app).delete('/records/61a851bf53f24c830eef81a6')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -192,7 +192,7 @@ describe('Test Sistema de records', ()=>{
 describe('Test Sistema de records', ()=>{
   // Test Case = > 50 %
   it('Debería NO eliminar una records de usuario', (done)=>{
-    supertest(app).put('/records/show/61a851bf53f24c830eef81a6')
+    supertest(app).delete('/records/show/61a851bf53f24c830eef81a6')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){

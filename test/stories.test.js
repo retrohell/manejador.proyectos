@@ -8,15 +8,12 @@ var key = "";
 describe('Test Sistema de Autenticación', ()=>{
   // Test Case = > 50 %
   it('Debería obtener un login correcto', (done)=>{
-    supertest(app).get('/login')
-    .set('email':'EmailTest@mail.com', 'password':'password2021')
+    supertest(app).post('/login')
+    .send({'email':'EmailTest@mail.com', 'password':'password2021'})
+    .expect(200)
     .end(function(err, res){
-      if(err){
-        done(err);
-      } else {
-        expect(res.statusCode).toEqual(200);
-        done();
-      }
+      key = res.body.obj;
+      done();
     });
   });
 });
@@ -140,7 +137,7 @@ describe('Test Sistema de Historias', ()=>{
       if(err){
         done(err);
       } else {
-        expect(res.statusCode).toEqual(404);
+        expect(res.statusCode).toEqual(401);
         done();
       }
     });
@@ -150,7 +147,7 @@ describe('Test Sistema de Historias', ()=>{
 describe('Test Sistema de Historias', ()=>{
   // Test Case = > 50 %
   it('Debería editar una historia de usuario', (done)=>{
-    supertest(app).put('/stories/61a8912201b82dfa3c3fe8c0')
+    supertest(app).patch('/stories/61a8912201b82dfa3c3fe8c0')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -165,7 +162,7 @@ describe('Test Sistema de Historias', ()=>{
 describe('Test Sistema de Historias', ()=>{
   // Test Case = > 50 %
   it('Debería NO editar una historia de usuario', (done)=>{
-    supertest(app).put('/stories/show/61a8912201b82dfa3c3fe8c0')
+    supertest(app).patch('/stories/show/61a8912201b82dfa3c3fe8c0')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){
@@ -181,7 +178,7 @@ describe('Test Sistema de Historias', ()=>{
 describe('Test Sistema de Historias', ()=>{
   // Test Case = > 50 %
   it('Debería eliminar una historia de usuario', (done)=>{
-    supertest(app).put('/stories/61a8912201b82dfa3c3fe8c0')
+    supertest(app).delete('/stories/61a8912201b82dfa3c3fe8c0')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -196,7 +193,7 @@ describe('Test Sistema de Historias', ()=>{
 describe('Test Sistema de Historias', ()=>{
   // Test Case = > 50 %
   it('Debería NO eliminar una historia de usuario', (done)=>{
-    supertest(app).put('/stories/show/61a8912201b82dfa3c3fe8c0')
+    supertest(app).delete('/stories/show/61a8912201b82dfa3c3fe8c0')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){
