@@ -3,6 +3,19 @@ const supertest = require('supertest');
 const app = require('../app');
 
 var key = "";
+// Sentence
+describe('Test Sistema de Autenticación', ()=>{
+  // Test Case = > 50 %
+  it('Debería obtener un login correcto', (done)=>{
+    supertest(app).post('/login')
+    .send({'email':'EmailTest@mail.com', 'password':'password2021'})
+    .expect(200)
+    .end(function(err, res){
+      key = res.body.obj;
+      done();
+    });
+  });
+});
 
 // Sentence
 describe('Test Sistema de records', ()=>{

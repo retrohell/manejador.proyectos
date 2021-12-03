@@ -5,6 +5,20 @@ const app = require('../app');
 var key = "";
 
 // Sentence
+describe('Test Sistema de Autenticación', ()=>{
+  // Test Case = > 50 %
+  it('Debería obtener un login correcto', (done)=>{
+    supertest(app).post('/login')
+    .send({'email':'EmailTest@mail.com', 'password':'password2021'})
+    .expect(200)
+    .end(function(err, res){
+      key = res.body.obj;
+      done();
+    });
+  });
+});
+
+// Sentence
 describe('Test Sistema de backlogs', ()=>{
   // Test Case = > 50 %
   it('Debería obtener la lista de backlogs de usuario', (done)=>{
@@ -86,7 +100,7 @@ describe('Test Sistema de backlogs', ()=>{
 describe('Test Sistema de backlogs', ()=>{
   // Test Case = > 50 %
   it('Debería NO crear una backlogs de usuario', (done)=>{
-    supertest(app).post('/backlogs')
+    supertest(app).post('/backlogs/')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){

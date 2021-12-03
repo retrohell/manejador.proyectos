@@ -5,6 +5,23 @@ const app = require('../app');
 var key = "";
 
 // Sentence
+describe('Test Sistema de Autenticación', ()=>{
+  // Test Case = > 50 %
+  it('Debería obtener un login correcto', (done)=>{
+    supertest(app).get('/login')
+    .set('email':'EmailTest@mail.com', 'password':'password2021')
+    .end(function(err, res){
+      if(err){
+        done(err);
+      } else {
+        expect(res.statusCode).toEqual(200);
+        done();
+      }
+    });
+  });
+});
+
+// Sentence
 describe('Test Sistema de Historias', ()=>{
   // Test Case = > 50 %
   it('Debería obtener la lista de historias de usuario', (done)=>{

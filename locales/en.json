@@ -9,5 +9,10 @@
 	"stories.created.fibonacci.bad": "stories.created.fibonacci.bad",
 	"stories.created.ok": "stories.created.ok",
 	"stories.created.bad": "stories.created.bad",
-	"stories.replace.ok": "stories.replace.ok"
+	"stories.replace.ok": "stories.replace.ok",
+	"records.list.ok": "records.list.ok",
+	"records.index.bad": "records.index.bad",
+	"records.index.ok": "records.index.ok",
+	"records.created.ok": "records.created.ok",
+	"records.replace.ok": "records.replace.ok"
 }

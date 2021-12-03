@@ -4,10 +4,23 @@ const app = require('../app');
 
 var key = "";
 
+describe('Test Sistema de Autenticación', ()=>{
+  // Test Case = > 50 %
+  it('Debería obtener un login correcto', (done)=>{
+    supertest(app).post('/login')
+    .send({'email':'EmailTest@mail.com', 'password':'password2021'})
+    .expect(200)
+    .end(function(err, res){
+      key = res.body.obj;
+      done();
+    });
+  });
+});
+
 // Sentence
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería obtener la lista de Usuarios de usuario', (done)=>{
+  it('Debería obtener la lista de Usuarios', (done)=>{
     supertest(app).get('/users/')
     .set('Authorization', `${key}`)
     .end(function(err, res){
@@ -22,7 +35,7 @@ describe('Test Sistema de Usuarios', ()=>{
 });
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería NO obtener la lista de Usuarios de usuario', (done)=>{
+  it('Debería NO obtener la lista de Usuarios', (done)=>{
     supertest(app).get('/users/show')
     .set( 'Authorization', ` ${key}`)
     .end(function(err, res){
@@ -38,8 +51,8 @@ describe('Test Sistema de Usuarios', ()=>{
 
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería obtener una historia de usuario', (done)=>{
-    supertest(app).get('/users/?id=61a8912201b82dfa3c3fe8c0')
+  it('Debería obtener un usuario', (done)=>{
+    supertest(app).get('/users/?id=61a9b31132a70dac7c4ba64a')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -53,8 +66,8 @@ describe('Test Sistema de Usuarios', ()=>{
 });
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería NO obtener una historia de usuario', (done)=>{
-    supertest(app).get('/users/show/61a8912201b82dfa3c3fe8c0')
+  it('Debería NO obtener un usuario', (done)=>{
+    supertest(app).get('/users/show/61a9b31132a70dac7c4ba64a')
     .set( 'Authorization', ` ${key}`)
     .end(function(err, res){
       if(err){
@@ -70,7 +83,7 @@ describe('Test Sistema de Usuarios', ()=>{
 
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería crear una historia de usuario', (done)=>{
+  it('Debería crear un usuario', (done)=>{
     supertest(app).post('/users')
     .set('Authorization', `${key}`)
     .end(function(err, res){
@@ -85,7 +98,7 @@ describe('Test Sistema de Usuarios', ()=>{
 });
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería NO crear una historia de usuario', (done)=>{
+  it('Debería NO crear un usuario', (done)=>{
     supertest(app).post('/users')
     .set( 'Authorization', ` `)
     .end(function(err, res){
@@ -101,8 +114,8 @@ describe('Test Sistema de Usuarios', ()=>{
 
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería reemplazar una historia de usuario', (done)=>{
-    supertest(app).put('/users/61a8912201b82dfa3c3fe8c0')
+  it('Debería reemplazar un usuario', (done)=>{
+    supertest(app).put('/users/61a9b31132a70dac7c4ba64a')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -116,8 +129,8 @@ describe('Test Sistema de Usuarios', ()=>{
 });
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería NO reemplazar una historia de usuario', (done)=>{
-    supertest(app).put('/users/show/61a8912201b82dfa3c3fe8c0')
+  it('Debería NO reemplazar un usuario', (done)=>{
+    supertest(app).put('/users/show/61a9b31132a70dac7c4ba64a')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){
@@ -132,8 +145,8 @@ describe('Test Sistema de Usuarios', ()=>{
 
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería editar una historia de usuario', (done)=>{
-    supertest(app).put('/users/61a8912201b82dfa3c3fe8c0')
+  it('Debería editar un usuario', (done)=>{
+    supertest(app).put('/users/61a9b31132a70dac7c4ba64a')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -147,8 +160,8 @@ describe('Test Sistema de Usuarios', ()=>{
 });
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería NO editar una historia de usuario', (done)=>{
-    supertest(app).put('/users/show/61a8912201b82dfa3c3fe8c0')
+  it('Debería NO editar un usuario', (done)=>{
+    supertest(app).put('/users/show/61a9b31132a70dac7c4ba64a')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){
@@ -163,8 +176,8 @@ describe('Test Sistema de Usuarios', ()=>{
 
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería eliminar una historia de usuario', (done)=>{
-    supertest(app).put('/users/61a8912201b82dfa3c3fe8c0')
+  it('Debería eliminar un usuario', (done)=>{
+    supertest(app).put('/users/61a9b31132a70dac7c4ba64a')
     .set('Authorization', `${key}`)
     .end(function(err, res){
       if(err){
@@ -178,8 +191,8 @@ describe('Test Sistema de Usuarios', ()=>{
 });
 describe('Test Sistema de Usuarios', ()=>{
   // Test Case = > 50 %
-  it('Debería NO eliminar una historia de usuario', (done)=>{
-    supertest(app).put('/users/show/61a8912201b82dfa3c3fe8c0')
+  it('Debería NO eliminar un usuario', (done)=>{
+    supertest(app).put('/users/show/61a9b31132a70dac7c4ba64a')
     .set( 'Authorization', ` `)
     .end(function(err, res){
       if(err){
