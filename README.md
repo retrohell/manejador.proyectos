@@ -13,7 +13,7 @@ Ericka Pamela Bermúdez Pillado <a28478@uach.mx>
 ### Class diagram
 ![Class diagram](developer_utils/CLASS_DIAGRAM.png)
 ### Sequence diagram 
-![Class diagram](developer_utils/SEQUENCE_DIAGRAM.png)
+![Sequence diagram](developer_utils/SEQUENCE_DIAGRAM.png)
 
 
 ## Installation
