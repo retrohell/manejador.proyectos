@@ -58,9 +58,6 @@ function create(req, res, next) {
 
     if(!fib.includes(value_number)){
         logger.error(res.__('stories.created.fibonacci.bad'));
-        res.status(500).json({
-            message: res.__('stories.created.fibonacci.bad' ),
-        })
     }
 
     let story = new Story({
@@ -143,7 +140,7 @@ function replace(req, res, next) {
 }
 
 function edit(req, res, next) {
-    const id = req.query.id;
+    const id = req.params.id;
     const name = req.body.name;
     const backlogId = req.body.backlogId;
     const value = req.body.value;
@@ -215,7 +212,7 @@ function edit(req, res, next) {
 }
 
 function destroy(req, res, next) {
-    const id = req.query.id;
+    const id = req.params.id;
 
     Story.remove({ "_id": id })
         .then(obj => {
