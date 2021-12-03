@@ -9,6 +9,13 @@ Irvin Daniel Campos Valenzuela <329762@uach.mx>
 
 Ericka Pamela Bermúdez Pillado <a28478@uach.mx>
 
+## Diagrams
+### Class diagram
+![Class diagram](developer_utils/CLASS_DIAGRAM.png)
+### Sequence diagram 
+![Class diagram](developer_utils/SEQUENCE_DIAGRAM.png)
+
+
 ## Installation
 
 Use the package manager [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install the dependencies, including [Express](https://expressjs.com/).
