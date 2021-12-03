@@ -31,6 +31,7 @@
 [2021-12-02T02:21:16.691] [ERROR] stories - Hubo un error al crear historia de usuario, valor tiene que ser parte de la serie de fibonacci
 [2021-12-02T02:25:04.310] [INFO] stories - Se creó historia de usuario exitosamente
 [2021-12-02T02:25:54.249] [INFO] stories - Se creó historia de usuario exitosamente
+<<<<<<< HEAD
 [2021-12-02T19:01:42.573] [INFO] stories - Got stories successfully
 [2021-12-02T19:01:42.573] [INFO] records - Got records successfully
 [2021-12-02T19:01:42.555] [INFO] backlogs - backlogs.list.ok
@@ -390,3 +391,85 @@
 [2021-12-02T20:48:30.407] [INFO] records - records.replace.ok
 [2021-12-02T20:48:30.485] [INFO] backlogs - backlogs.replace.ok
 [2021-12-02T20:48:30.490] [INFO] records - records.replace.ok
+=======
+[2021-12-02T20:15:22.414] [INFO] stories - Historia de usuario editado exitosamente
+[2021-12-02T20:44:05.716] [INFO] stories - Historia de usuario editado exitosamente
+[2021-12-02T21:18:42.470] [INFO] stories - Se obtuvieron las historias de usuario exitosamente
+[2021-12-02T21:19:38.027] [INFO] stories - Se obtuvo el historia de usuario exitosamente
+[2021-12-02T21:21:34.672] [INFO] stories - Se obtuvo el historia de usuario exitosamente
+[2021-12-02T21:22:22.271] [INFO] stories - Se obtuvo el historia de usuario exitosamente
+[2021-12-02T21:22:24.277] [INFO] stories - Se obtuvo el historia de usuario exitosamente
+[2021-12-02T21:23:11.207] [INFO] stories - Se obtuvo el historia de usuario exitosamente
+[2021-12-02T21:23:36.714] [INFO] stories - Se obtuvo el historia de usuario exitosamente
+[2021-12-02T21:24:25.919] [INFO] stories - Se obtuvo el historia de usuario exitosamente
+[2021-12-02T21:26:17.603] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:27:53.972] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:28:02.932] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:28:36.645] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:28:53.787] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:31:06.999] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:31:10.415] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:31:59.075] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:33:36.300] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:34:52.001] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:38:58.102] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:43:19.907] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:43:44.526] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:44:49.784] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:51:59.742] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+[2021-12-02T21:52:19.239] [ERROR] stories - Hubo un error al intentar obtener la historia de usuario
+>>>>>>> bbe67e6b4d93b4ac34b88c75b6dc45e6d0def328
+[2021-12-02T22:12:21.606] [INFO] stories - stories.list.ok
+[2021-12-02T22:12:21.568] [INFO] records - records.list.ok
+[2021-12-02T22:12:21.539] [INFO] backlogs - undefined
+[2021-12-02T22:12:21.739] [ERROR] backlogs - backlogs.index.bad
+[2021-12-02T22:12:21.740] [ERROR] records - records.index.bad
+[2021-12-02T22:12:21.741] [ERROR] stories - stories.index.bad
+[2021-12-02T22:12:21.807] [INFO] backlogs - backlogs.index.ok
+[2021-12-02T22:12:21.810] [INFO] records - records.index.ok
+[2021-12-02T22:12:21.811] [INFO] stories - stories.list.ok
+[2021-12-02T22:12:26.150] [ERROR] stories - stories.created.fibonacci.bad
+[2021-12-02T22:12:26.230] [INFO] stories - stories.created.ok
+[2021-12-02T22:12:26.232] [INFO] records - records.created.ok
+[2021-12-02T22:12:26.238] [INFO] backlogs - backlogs.created.ok
+[2021-12-02T22:12:26.239] [ERROR] stories - stories.created.fibonacci.bad
+[2021-12-02T22:12:26.302] [INFO] stories - stories.created.ok
+[2021-12-02T22:12:26.320] [INFO] records - records.created.ok
+[2021-12-02T22:12:26.320] [INFO] backlogs - backlogs.created.ok
+[2021-12-02T22:12:31.275] [ERROR] stories - stories.created.bad: no fibonacci
+[2021-12-02T22:12:31.339] [INFO] stories - stories.replace.ok
+[2021-12-02T22:12:31.357] [INFO] records - records.replace.ok
+[2021-12-02T22:12:31.360] [INFO] backlogs - backlogs.replace.ok
+[2021-12-02T22:12:31.443] [INFO] backlogs - backlogs.replace.ok
+[2021-12-02T22:12:31.459] [INFO] records - records.replace.ok
+[2021-12-02T22:12:31.521] [INFO] backlogs - backlogs.replace.ok
+[2021-12-02T22:12:31.542] [INFO] records - records.replace.ok
+[2021-12-02T22:13:43.300] [INFO] records - records.list.ok
+[2021-12-02T22:13:43.307] [INFO] backlogs - backlogs.list.ok
+[2021-12-02T22:13:43.323] [ERROR] records - records.index.bad
+[2021-12-02T22:13:43.331] [ERROR] backlogs - backlogs.index.bad
+[2021-12-02T22:13:43.406] [INFO] records - records.index.ok
+[2021-12-02T22:13:43.407] [INFO] backlogs - backlogs.index.ok
+[2021-12-02T22:13:43.770] [INFO] stories - stories.list.ok
+[2021-12-02T22:13:43.799] [ERROR] stories - stories.index.bad
+[2021-12-02T22:13:43.855] [INFO] records - records.created.ok
+[2021-12-02T22:13:43.866] [INFO] backlogs - backlogs.created.ok
+[2021-12-02T22:13:43.875] [INFO] stories - stories.list.ok
+[2021-12-02T22:13:43.919] [INFO] records - records.created.ok
+[2021-12-02T22:13:43.947] [INFO] backlogs - backlogs.created.ok
+[2021-12-02T22:13:44.150] [ERROR] stories - stories.created.fibonacci.bad
+[2021-12-02T22:13:44.225] [INFO] stories - stories.created.ok
+[2021-12-02T22:13:44.229] [ERROR] stories - stories.created.fibonacci.bad
+[2021-12-02T22:13:44.294] [INFO] stories - stories.created.ok
+[2021-12-02T22:13:48.949] [INFO] records - records.replace.ok
+[2021-12-02T22:13:48.954] [INFO] backlogs - backlogs.replace.ok
+[2021-12-02T22:13:49.021] [INFO] records - records.replace.ok
+[2021-12-02T22:13:49.026] [INFO] backlogs - backlogs.replace.ok
+[2021-12-02T22:13:49.102] [INFO] records - records.replace.ok
+[2021-12-02T22:13:49.111] [INFO] backlogs - backlogs.replace.ok
+[2021-12-02T22:13:49.265] [ERROR] stories - stories.created.bad: no fibonacci
+[2021-12-02T22:13:49.433] [INFO] stories - stories.replace.ok
+[2021-12-02T22:13:49.457] [ERROR] stories - stories.created.bad: no fibonacci
+[2021-12-02T22:13:49.525] [INFO] stories - stories.replace.ok
+[2021-12-02T22:13:49.549] [ERROR] stories - stories.created.bad: no fibonacci
+[2021-12-02T22:13:49.643] [INFO] stories - stories.replace.ok

@@ -22,6 +22,24 @@ function list(req, res, next) {
     });
 }
 
+function findStoriesByBacklogId(req, res, next) {
+    const backlogId = req.query.backlogId;
+    print("findStoriesByBacklogId")
+    Story.find({ "_backlogId": backlogId }).then(obj => {
+        logger.info(res.__('ok'));
+        res.status(200).json({
+            message: res.__('ok'),
+            obj: obj
+        })
+    }).catch(ex => {
+        logger.error(res.__('bad'));
+        res.status(500).json({
+            message: res.__('bad'),
+            obj: ex
+        })
+    });
+}
+
 function index(req, res, next) {
     const id = req.params.id;
     Story.findOne({ "_id": id }).then(obj => {
@@ -58,9 +76,6 @@ function create(req, res, next) {
 
     if(!fib.includes(value_number)){
         logger.error(res.__('stories.created.fibonacci.bad'));
-        res.status(500).json({
-            message: res.__('stories.created.fibonacci.bad' ),
-        })
     }
 
     let story = new Story({
@@ -107,11 +122,6 @@ function replace(req, res, next) {
     const fib = [0, 1, 2, 3, 5, 8, 13]
     if(!fib.includes(value)){
         logger.error(res.__('stories.created.bad') + ": no fibonacci");
-        res.status(500).json({
-            message: res.__('stories.created.bad' + ": no fibonacci" ),
-            obj: ex
-        })
-        return
     }
 
     let story = new Object({
@@ -143,7 +153,7 @@ function replace(req, res, next) {
 }
 
 function edit(req, res, next) {
-    const id = req.query.id;
+    const id = req.params.id;
     const name = req.body.name;
     const backlogId = req.body.backlogId;
     const value = req.body.value;
@@ -215,7 +225,7 @@ function edit(req, res, next) {
 }
 
 function destroy(req, res, next) {
-    const id = req.query.id;
+    const id = req.params.id;
 
     Story.remove({ "_id": id })
         .then(obj => {
@@ -234,10 +244,12 @@ function destroy(req, res, next) {
 }
 
 module.exports = {
+    findStoriesByBacklogId,
     list,
     index,
     create,
     replace,
     edit,
-    destroy
+    destroy,
+    
 }
