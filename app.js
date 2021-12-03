@@ -53,19 +53,20 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); // static resources
 app.use(i18n.init);
 
-/*
+
 app.use(expressJwt({secret:jwtKey, algorithms:['HS256']}).unless({
   path:[
     "/login",
   ]
 }));
-*/
+
 
 app.use('/records', recordsRouter);
 app.use('/backlogs', backlogsRouter);
 app.use('/stories', storiesRouter);
-app.use('/index', indexRouter);
+app.use('/', indexRouter);
 app.use('/users', usersRouter);
+//app.use('/login', indexRouter);
 
 
 // catch 404 and forward to error handler

@@ -16,7 +16,7 @@ function login (req, res, next){
 
     async.parallel({
         user: callback => User.findOne({_email:email})
-        .select('_password, _salt')
+        .select('_password _salt')
         .exec(callback)
     }, (err, result) => {
         if(result.user) {
