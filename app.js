@@ -17,6 +17,8 @@ const jwtKey = config.get("secret.key");
 var recordsRouter = require('./routes/records');
 var backlogsRouter = require('./routes/backlogs');
 var storiesRouter = require('./routes/stories');
+var indexRouter = require('./routes/index');
+var usersRouter  = require('./routes/users');
 
 const uri = config.get("dbChain");
 mongoose.connect(uri);
@@ -26,7 +28,7 @@ var app = express();
 
 // mongodb
 db.on('error', () => {
-  console.log("Can't connect to data base.");
+  console.log("Can't connect to database.");
 });
 
 db.on('open', () => {
@@ -51,17 +53,20 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); // static resources
 app.use(i18n.init);
 
-/*
+
 app.use(expressJwt({secret:jwtKey, algorithms:['HS256']}).unless({
   path:[
     "/login",
   ]
 }));
-*/
+
 
 app.use('/records', recordsRouter);
 app.use('/backlogs', backlogsRouter);
 app.use('/stories', storiesRouter);
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+//app.use('/login', indexRouter);
 
 
 // catch 404 and forward to error handler
