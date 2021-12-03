@@ -45,13 +45,15 @@ function create(req, res, next) {
     const startDate = req.body.startDate;
     const endDate = req.body.endDate;
     const description = req.body.description;
+    const teamMembers = req.body.teamMembers;
     console.log(req.body)
     let record = new Record({
         name: name,
         requestDate: requestDate,
         startDate: startDate,
         endDate: endDate,
-        description: description
+        description: description,
+        teamMembers: teamMembers
     });
 
     record.save().then(obj => {
@@ -107,6 +109,7 @@ function edit(req, res, next) {
     let startDate = req.body.startDate;
     let endDate = req.body.endDate;
     let description = req.body.description;
+    let teamMembers = req.body.teamMembers;
 
     let record = new Object();
 
@@ -128,6 +131,10 @@ function edit(req, res, next) {
 
     if (description) {
         record._description = description;
+    }
+
+    if (teamMembers) {
+        record._teamMembers = teamMembers;
     }
 
     Record.findOneAndUpdate({ "_id": id }, record)

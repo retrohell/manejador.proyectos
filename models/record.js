@@ -5,16 +5,18 @@ const schema = mongoose.Schema({
     _requestDate: Date,
     _startDate: Date,
     _endDate: Date,
-    _description: String
+    _description: String,
+    _teamMembers: Array,
 });
 
 class Record {
-    constructor(name, requestDate, startDate, endDate, description) {
+    constructor(name, requestDate, startDate, endDate, description, teamMembers) {
         this._name = name;
         this._requestDate = new Date(requestDate);
         this._startDate = new Date(startDate);
         this._endDate = new Date(endDate);
         this._description = description;
+        this._teamMembers = teamMembers;
     }
 
     get name() {
@@ -55,6 +57,15 @@ class Record {
 
     set description(v) {
         this._description = v
+    }
+
+    
+    get teamMembers() {
+        return this._teamMembers
+    }
+
+    set teamMembers(v) {
+        this._teamMembers = v
     }
 }
 

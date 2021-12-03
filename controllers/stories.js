@@ -22,6 +22,24 @@ function list(req, res, next) {
     });
 }
 
+function findStoriesByBacklogId(req, res, next) {
+    const backlogId = req.query.backlogId;
+    print("findStoriesByBacklogId")
+    Story.find({ "_backlogId": backlogId }).then(obj => {
+        logger.info(res.__('ok'));
+        res.status(200).json({
+            message: res.__('ok'),
+            obj: obj
+        })
+    }).catch(ex => {
+        logger.error(res.__('bad'));
+        res.status(500).json({
+            message: res.__('bad'),
+            obj: ex
+        })
+    });
+}
+
 function index(req, res, next) {
     const id = req.params.id;
     Story.findOne({ "_id": id }).then(obj => {
@@ -226,10 +244,12 @@ function destroy(req, res, next) {
 }
 
 module.exports = {
+    findStoriesByBacklogId,
     list,
     index,
     create,
     replace,
     edit,
-    destroy
+    destroy,
+    
 }
