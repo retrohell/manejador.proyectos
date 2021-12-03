@@ -43,7 +43,6 @@
 	"stories.destroyed.bad": "Hubo un error al eliminar la historia de usuario",
 	"stories.created.bad: no fibonacci": "stories.created.bad: no fibonacci",
 
-	
 	"users.list.ok": "Se obtuvieron los users éxitosamente",
 	"users.list.bad": "No se pudieron obtener los users",
 	"users.created.ok": "Se creó user éxitosamente",
