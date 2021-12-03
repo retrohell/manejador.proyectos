@@ -1,6 +1,7 @@
 {
 	"ok": "Acción realizada éxitosamente",
 	"bad": "Hubo un error al realizar la acción",
+
 	"records.list.ok": "Se obtuvieron los récords éxitosamente",
 	"records.list.bad": "No se pudieron obtener los récords",
 	"records.created.ok": "Se creó récord éxitosamente",
@@ -13,6 +14,7 @@
 	"records.edited.bad": "Hubo un error al editar el récord",
 	"records.destroyed.ok": "Récord eliminado éxitosamente",
 	"records.destroyed.bad": "Hubo un error al eliminar el récord",
+
 	"backlogs.list.ok": "Se obtuvieron los backlogs exitosamente",
 	"backlogs.list.bad": "No se pudieron obtener los backlogs",
 	"backlogs.created.ok": "Se creó backlog exitosamente",
@@ -25,6 +27,7 @@
 	"backlogs.edited.bad": "Hubo un error al editar el backlog",
 	"backlogs.destroyed.ok": "Backlog eliminado éexitosamente",
 	"backlogs.destroyed.bad": "Hubo un error al eliminar el backlog",
+
 	"stories.list.ok": "Se obtuvieron las historias de usuario exitosamente",
 	"stories.list.bad": "No se pudieron obtener las historias de usuario",
 	"stories.created.ok": "Se creó historia de usuario exitosamente",
@@ -38,5 +41,20 @@
 	"stories.edited.bad": "Hubo un error al editar la historia de usuario",
 	"stories.destroyed.ok": "Historia de usuario eliminado exitosamente",
 	"stories.destroyed.bad": "Hubo un error al eliminar la historia de usuario",
-	"stories.created.bad: no fibonacci": "stories.created.bad: no fibonacci"
+	"stories.created.bad: no fibonacci": "stories.created.bad: no fibonacci",
+
+	
+	"users.list.ok": "Se obtuvieron los users éxitosamente",
+	"users.list.bad": "No se pudieron obtener los users",
+	"users.created.ok": "Se creó user éxitosamente",
+	"users.created.bad": "Hubo un error al crear user, no se pudo crear",
+	"users.index.ok": "Se obtuvo el user éxitosamente",
+	"users.index.bad": "Hubo un error al intentar obtener el user",
+	"users.replaced.ok": "Se reemplazó el user éxitosamente",
+	"users.replaced.bad": "Hubo un error al reemplazar el user",
+	"users.edited.ok": "User editado éxitosamente",
+	"users.edited.bad": "Hubo un error al editar el user",
+	"users.destroyed.ok": "User eliminado éxitosamente",
+	"users.destroyed.bad": "Hubo un error al eliminar el user"
+
 }

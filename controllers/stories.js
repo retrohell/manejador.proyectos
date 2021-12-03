@@ -104,11 +104,6 @@ function replace(req, res, next) {
     const fib = [0, 1, 2, 3, 5, 8, 13]
     if(!fib.includes(value)){
         logger.error(res.__('stories.created.bad') + ": no fibonacci");
-        res.status(500).json({
-            message: res.__('stories.created.bad' + ": no fibonacci" ),
-            obj: ex
-        })
-        return
     }
 
     let story = new Object({

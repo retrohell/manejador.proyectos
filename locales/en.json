@@ -27,6 +27,20 @@
     "stories.edited.ok": "Story edited successfully",
     "stories.edited.bad": "There was an error while updating, story couldn't be edited",
     "stories.destroyed.ok": "Story deleted successfully",
-    "stories.destroyed.bad": "There was an error while deleting, couldn't delete story"
+    "stories.destroyed.bad": "There was an error while deleting, couldn't delete story",
+	
+	"users.list.ok": "Got users successfully",
+	"users.list.bad": "There was an error, couldn't get users",
+	"users.created.ok": "User created successfully",
+	"users.created.bad": "There was an error while creating user",
+	"users.index.ok": "Got user successfully",
+	"users.index.bad": "There was an error while getting user",
+	"users.replaced.ok": "User replaced successfully",
+	"users.replaced.bad": "There was an error while replacing, couldn't replace user",
+	"users.edited.ok": "User edited successfully",
+	"users.edited.bad": "There was an error while updating, user couldn't be edited",
+	"users.destroyed.ok": "User deleted successfully",
+	"users.destroyed.bad": "There was an error while deleting, couldn't delete user"
+
 
 }
