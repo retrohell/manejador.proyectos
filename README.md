@@ -12,7 +12,7 @@ Ericka Pamela Bermúdez Pillado <a28478@uach.mx>
 ## Diagrams
 ### Class diagram
 ![Class diagram](developer_utils/CLASS_DIAGRAM.png)
-### Sequence diagram 
+### Sequence diagram
 ![Sequence diagram](developer_utils/SEQUENCE_DIAGRAM.png)
 
 
@@ -24,7 +24,7 @@ Use the package manager [npm](https://docs.npmjs.com/downloading-and-installing-
 npm i
 ```
 
-Then use the following command to run the project 
+Then use the following command to run the project
 
 ```bash
 npm start
